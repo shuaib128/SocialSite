@@ -1,0 +1,340 @@
+@media screen and (max-width: 1060px){
+    .section_1{
+        height: 107px;
+    }
+    
+    .sec_1_up{
+        flex-direction: column;
+    }
+    
+    .logo{
+        width: 20%;
+        margin: 0 auto;
+    }
+    
+    .sec_right{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search{
+        margin-right: 8%;
+    }
+    
+    .hidden_div{
+        top: 90px;
+    }
+    
+    .hidden_div_message{
+        top: 90px;
+    }
+    
+    .section_2{
+        grid-template-columns: 100%;
+    }
+    
+    .sec2_friends{
+        margin-left: 0px;
+    } 
+    
+    .friends{
+        width: 50%;
+    }
+    
+    .friend button{
+        margin: 11px 26px 10px 49%;
+    }
+    
+    .treading_photo{
+        width: 49%;
+    }
+    
+    .latest_post{
+        width: 50%;
+        grid-template-columns: 100%;
+        padding-right: 3%;
+        grid-row-gap: 2%;
+        overflow: scroll;
+    }
+    
+    .latest_post_cl{
+        height: 100%
+    }
+    
+    .posts{
+        width: 94%;
+        padding-top: 5%;
+        margin: 0 auto;
+    }
+    
+    .stories{
+        display: none;
+    }
+    
+    .ex_down{
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 45px
+    }
+    
+    .profile_posts{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px){
+    .section_1 {
+        height: 195px;
+        top: -17%;
+    }
+    
+    .sec_right{
+        flex-direction: column;
+    }
+    
+    .not_mess {
+        margin: 0 auto;
+        margin-top: 14px;
+    }
+    
+    .profile_dev{
+        margin: 0 auto;
+        margin-top: 11px;
+    }
+    
+    .search{
+        margin-right: 0px;
+        margin-right: 0px;
+        width: 268px;
+        margin: 0 auto
+    }
+    
+    .hidden_div{
+        width: 276px;
+        top: 152px;
+        left: 69px;
+    }
+    
+    .hidden_div_message{
+        width: 276px;
+        top: 152px;
+        left: 69px;
+    }
+    
+    .light {
+        height: 91%
+    }
+    
+    .dark {
+        height: 91%
+    }
+    
+    .friends {
+        width: 80%
+    }
+    
+    .friend button{
+        margin: 11px 26px 10px 27%;
+    }
+    
+    .treading_photo{
+        width: 80%;
+    }
+    
+    .latest_post{
+        width: 80%
+    }
+    
+    .posts{
+        width: 88%;
+        padding-top: 14%;
+    }
+    
+    .post_top button{
+        
+    }
+    
+    .pt_n{
+        width: 70%
+    }
+    
+    .ex_down{
+        grid-template-columns:100%;
+        overflow: hidden;
+    }
+    
+    .ex_down_down{
+        grid-template-columns: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .prifile_dp_pic{
+        top: 72%;
+        left: 31%;
+    }
+    
+    .bio_up{
+        display: block;
+    }
+    
+    .name_bio{
+        margin: 0 auto;
+    }
+    
+    .follow_btn button{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .follow_btn{
+        margin: 0 auto;
+        margin-top: 13px;
+    }
+    
+    .bio_info{
+        width: 93%;
+        margin-left: 4%;
+        margin-top: 24px;
+    }
+    
+    .followers_info{
+        width: 339px;
+        font-size: 14px;
+    }
+    
+    .profile_posts{
+        grid-template-columns: 100%;
+    }
+    
+    .account_setting_edit{
+        display: block;
+    }
+    
+    .profile_details{
+        padding: 6%
+    }
+    
+    .profile_edit{
+        padding: 6%
+    }
+    
+    .acount_setting h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .account_img{
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .accoount_details {
+        width: 100%;
+        margin-top: 18%;
+    }
+    
+    .accoount_details h1{
+        font-size: 30px;
+        margin-bottom: 8%;
+    }
+    
+    
+    .profile_setting {
+        width: 100%;
+        margin-top: 18%;
+        margin-left: 0px;
+    }
+    
+    .profile_setting h1{
+        font-size: 30px;
+        margin-bottom: 8%;
+        text-align: center;
+    }
+    
+    .contact_setting {
+        width: 100%;
+        margin-top: 18%;
+        margin-left: 0px;
+    }
+    
+    .contact_setting h1{
+        font-size: 30px;
+        margin-bottom: 8%;
+        text-align: center;
+    }
+    
+    .account_img button{
+        width: 148px;
+        height: 46px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

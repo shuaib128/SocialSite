@@ -1,0 +1,342 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+    	<title>My Blog</title>
+    	
+        <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'%}" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'index.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'animation.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'grid.css'%}" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>    
+<body>
+    <div class="section_1">
+        <div class="sec_1_up">
+            <div class="logo">
+                <img src="{% static 'Images/icons/instagram.png'%}">
+                <p>Fluffs</p>
+            </div>
+            
+            <div class="sec_right">
+                <div class="search">
+                    <form>
+                        <input placeholder="Search here" type="text">
+                        <button><img src="{% static 'Images/icons/search.png'%}"></button>
+                    </form>
+                </div>
+                
+                <div class="not_mess">
+                    <img src="{% static 'Images/icons/notification.png' %}">
+                    <div class="not_cer"><p>4</p></div>
+                    <img class="sen" src="{% static 'Images/icons/envelope.png' %}">
+                    <div class="not_cer"><p>7</p></div>
+                </div>
+                
+                <div class="profile_dev">
+                    <img src="{{ user.profile.images.url }}">
+                    <p>{{user.username}}</p>
+                </div>
+
+                <div class="hidden_profile">
+                    <ul>
+                        <li>New Storyes</li>
+                        <li>Profile</li>
+                        <a href="{% url 'logout' %}"><li>Log Out</li></a>
+                        <a href="{% url 'settings' %}"><li>Setting</li></a>
+                        <li>Need Help</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="hidden_div">
+            <div class="hidden_up">
+                <p>Notification</p>
+                <a href="#">Clear All</a>
+            </div>
+            
+            <div class="hidden_middle">
+                <div class="middle_main">
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif' %}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden_bottom">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="hidden_div_message">
+            <div class="hidden_up">
+                <p>Chat</p>
+                <a href="#">Clear All</a>
+            </div>
+            
+            <div class="hidden_middle">
+                <div class="middle_main">
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messagedd you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden_bottom">
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="sec_1_down">
+            <div class="light active">
+                <a href="{% url 'home' %}"><img src="{% static 'Images/icons/home.png'%}"></a>
+            </div>
+            <div class="dark">
+                <a href="{% url 'explore' %}"><img src="{%static 'Images/icons/target.png'%}"></a>
+            </div>
+            <div class="light">
+                <img src="{% static 'Images/icons/instagram2.png'%}">
+            </div>
+            <div class="dark">
+                <img src="{% static 'Images/icons/align-left.png'%}">
+            </div>
+            <div class="light">
+                <a href="{% url 'profile' %}"><img src="{% static 'Images/icons/user.png'%}"></a>
+            </div>
+        </div>
+    
+    
+    <div class="profile_dp">
+        <div class="cover_photo">
+        {% for user in posts %}
+            <img src="{{ user.author.profile.coverPhoto.url }}">
+        {% endfor %}
+        </div>
+        
+        <div class="prifile_dp_pic">
+        {% for user in posts %}
+            <img src="{{ user.author.profile.images.url }}">
+        {% endfor %}
+        </div>
+    </div>
+
+    <div class="restofthesec">
+        <div class="bio">
+            <div class="bio_up">
+                <div class="name_bio">
+                    <p>{{ view.kwargs.username }}</p>
+                    <img src="{% static 'Images/icons/check-mark.png' %}">
+                </div>
+                <div class="follow_btn">
+                    <button><img src="{% static 'Images/icons/check-mark.png'%}">Following</button>
+                </div>
+            </div>
+            
+            <div class="bio_info">
+               {% for user in posts %}
+                <p class="about_bio">
+                  {{ user.author.profile.biodata }}
+                </p>
+               {% endfor %}
+               {% for user in posts %}
+                <p class="bio_website">
+                  {{ user.author.profile.website }}
+                </p>
+                {% endfor %}
+                {% for user in posts %}
+                <p class="bio_website2">
+                  {{ user.author.profile.facebook }}
+                </p>
+                {% endfor %}
+                {% for user in posts %}
+                <p class="bio_website3">
+                  {{ user.author.profile.twitter }}
+                </p>
+                {% endfor %}
+                {% for user in posts %}
+                <p class="bio_website4">
+                  {{ user.author.profile.birthday }}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="followers">
+            <div class="followers_info">
+                <div class="info_follw">
+                    <p>Posts</p>
+                    <p class="follow_num">{{num_post}}</p>
+                </div>
+                <div class="info_follw">
+                    <p>Flowerrs</p>
+                    <p class="follow_num">17K</p>
+                </div>
+                <div class="info_follw">
+                    <p>Following</p>
+                    <p class="follow_num">17K</p>
+                </div>
+            </div>
+        </div>
+
+       
+        
+        
+        <div class="profile_posts">
+        <a href="{% url 'post_create' %}" class="btn btn-primary stretched-link">New Post</a>
+        {% for post in posts %}
+             <div class="ex_storyes file_posts">
+                <a href="{% url 'post_detail' post.id %}"><img src="{{post.content.url}}"></a>
+                <div class="like_bookmark">
+                    <div class="like_sec">
+                        <img src="{% static 'Images/icons/heart.png'%}">
+                        <p>45003</p>
+                    </div>
+                    <div class="bookmark">
+                        <img src="{% static 'Images/icons/bookmark.png'%}">
+                    </div>
+                </div>
+             </div>
+        {% endfor %}
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="{% static 'app.js'%}?version=1"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script
+</body>
+</html>

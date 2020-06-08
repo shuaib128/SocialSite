@@ -1,0 +1,417 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+    	<title>My Blog</title>
+    	
+        <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'%}" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'index.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'animation.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'grid.css'%}" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>    
+<body>
+    <div class="section_1">
+        <div class="sec_1_up">
+            <div class="logo">
+                <img src="{% static 'Images/icons/instagram.png'%}">
+                <p>Fluffs</p>
+            </div>
+            
+            <div class="sec_right">
+                <div class="search">
+                    <form>
+                        <input placeholder="Search here" type="text">
+                        <button><img src="{% static 'Images/icons/search.png'%}"></button>
+                    </form>
+                </div>
+                
+                <div class="not_mess">
+                    <img src="{% static 'Images/icons/notification.png' %}">
+                    <div class="not_cer"><p>4</p></div>
+                    <img class="sen" src="{% static 'Images/icons/envelope.png' %}">
+                    <div class="not_cer"><p>7</p></div>
+                </div>
+                
+                <div class="profile_dev">
+                    <img src="{{ user.profile.images.url }}">
+                    <p>{{user.username}}</p>
+                </div>
+
+                <div class="hidden_profile">
+                    <ul>
+                        <li>New Storyes</li>
+                        <li>Profile</li>
+                        <a href="{% url 'logout' %}"><li>Log Out</li></a>
+                        <a href="{% url 'settings' %}"><li>Setting</li></a>
+                        <li>Need Help</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="hidden_div">
+            <div class="hidden_up">
+                <p>Notification</p>
+                <a href="#">Clear All</a>
+            </div>
+            
+            <div class="hidden_middle">
+                <div class="middle_main">
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva commented on your photo</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden_bottom">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="hidden_div_message">
+            <div class="hidden_up">
+                <p>Chat</p>
+                <a href="#">Clear All</a>
+            </div>
+            
+            <div class="hidden_middle">
+                <div class="middle_main">
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messagedd you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification">
+                        <img src="Images/Posts/download%20(16).jfif">
+                        <div class="notifi_comment">
+                            <h3>Runtiva messaged you</h3>
+                            <p>1 min ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden_bottom">
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="sec_1_down">
+            <div class="light active">
+                <a href="{% url 'home' %}"><img src="{% static 'Images/icons/home.png'%}"></a>
+            </div>
+            <div class="dark">
+                <a href="{% url 'explore' %}"><img src="{%static 'Images/icons/target.png'%}"></a>
+            </div>
+            <div class="light">
+                <img src="{% static 'Images/icons/instagram2.png'%}">
+            </div>
+            <div class="dark">
+                <img src="{% static 'Images/icons/align-left.png'%}">
+            </div>
+            <div class="light">
+                <a href="{% url 'profile' %}"><img src="{% static 'Images/icons/user.png'%}"></a>
+            </div>
+        </div>
+    
+    
+    <div class="section_2">
+        <div class="sec2_friends">
+            <div class="friends">
+                <div class="friend">
+                    <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                    <p>Shuaib Ahamed<br>@shuiab</p>
+                    <button>+</button>
+                </div>
+                <div class="friend">
+                    <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                    <p>Shuaib Ahamed<br>@shuiab</p>
+                    <button>+</button>
+                </div>
+                <div class="friend">
+                    <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                    <p>Shuaib Ahamed<br>@shuiab</p>
+                    <button>+</button>
+                </div>
+                <div class="friend">
+                    <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                    <p>Shuaib Ahamed<br>@shuiab</p>
+                    <button>+</button>
+                </div>
+                <div class="friend">
+                    <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                    <p>Shuaib Ahamed<br>@shuiab</p>
+                    <button>+</button>
+                </div>
+                <div class="friend">
+                    <img src="{% static 'Images/Posts/download%20(16).jfif'%}">
+                    <p>Shuaib Ahamed<br>@shuiab</p>
+                    <button>+</button>
+                </div>
+            </div>
+            
+            <div class="treading_photo">
+                <p>Treading Photo</p>
+            </div>
+            
+            <div class="latest_post">
+                <div class="latest_post_cl">
+                    <img src="{% static 'Images/Posts/download%20(2).jfif'%}">
+                </div>
+                
+                <div class="latest_post_cl">
+                    <img src="{% static 'Images/Posts/download%20(2).jfif'%}">
+                </div>
+                
+                <div class="latest_post_cl">
+                    <img src="{% static 'Images/Posts/download%20(2).jfif'%}">
+                </div>
+                
+                <div class="latest_post_cl">
+                    <img src="{% static 'Images/Posts/download%20(2).jfif'%}">
+                </div>
+                
+                <div class="latest_post_cl">
+                    <img src="{% static 'Images/Posts/download%20(2).jfif'%}">
+                </div>
+                
+                <div class="latest_post_cl">
+                    <img src="{% static 'Images/Posts/download%20(2).jfif'%}">
+                </div>
+            </div>
+        </div>
+        
+        <div class="posts">
+            {% for post in posts %}
+            <div class="post">
+                <div class="post_top">
+                    <a href="{% url 'users' post.author.username %}"><div class="pt_n">
+                        <img src="{{ post.author.profile.images.url }}">
+                        <p>{{ post.author }}<br>@shuiab</p>
+                    </div></a>
+
+                    <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+                    <button>-</button>
+                </div>
+                <div class="hidden_option">
+                    <ul>
+                        <li>Hide</li>
+                        <li>Stop Flowing</li>
+                        <li>Report</li>
+                    </ul>
+                </div>
+                <div class="post_middle">
+                    <a href="{% url 'post_detail' post.id %}"><img src="{{ post.content.url }}"></a>
+                </div>
+                
+                <div class="post_bottom">
+                    <div class="lc">
+                        <div class="like">
+                            <img src="{% static 'Images/icons/heart.png'%}">
+                            <p>700500</p>
+                        </div>
+                        
+                        <div class="like">
+                            <img src="{% static 'Images/icons/speech-bubble.png'%}">
+                            <p>45009</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% if is_paginated %}
+               {% if page_obj.has_previous %}
+                <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+                <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+               {% endif %}
+
+               {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                  <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{num}}</a>
+                  {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                  {% endif %}
+                {% endfor %}
+
+               {% if page_obj.has_next %}
+                 <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+                 <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+               {% endif %}
+            {% endif %}
+        </div>
+        <div class="stories">
+            <div class="story">
+                <img src="{%static 'Images/Posts/2.gif'%}">
+                <div class="story_pfofile">
+                    <img src="Images/Posts/download%20(16).jfif">
+                    <p class="name">Shuaib Ahamed</p>
+                    <p class="date">5 Hours Ago</p>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img src="{%static 'Images/Posts/2.gif'%}">
+                <div class="story_pfofile">
+                    <img src="Images/Posts/download%20(16).jfif">
+                    <p class="name">Shuaib Ahamed</p>
+                    <p class="date">5 Hours Ago</p>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img src="{%static 'Images/Posts/2.gif'%}">
+                <div class="story_pfofile">
+                    <img src="Images/Posts/download%20(16).jfif">
+                    <p class="name">Shuaib Ahamed</p>
+                    <p class="date">5 Hours Ago</p>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img src="{%static 'Images/Posts/2.gif'%}">
+                <div class="story_pfofile">
+                    <img src="Images/Posts/download%20(16).jfif">
+                    <p class="name">Shuaib Ahamed</p>
+                    <p class="date">5 Hours Ago</p>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img src="{%static 'Images/Posts/2.gif'%}">
+                <div class="story_pfofile">
+                    <img src="Images/Posts/download%20(16).jfif">
+                    <p class="name">Shuaib Ahamed</p>
+                    <p class="date">5 Hours Ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="{% static 'app.js'%}"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script
+</body>
+</html>
